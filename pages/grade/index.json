@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  },
+  "basesUrl": "https://www.guojiangliu.com/"
+}

@@ -64,6 +64,9 @@ Page({
     }, {
       id: 'themeRiver',
       name: '主题河流图'
+    }, {
+      id: 'grade',
+      name: '成绩'
     }],
     chartsWithoutImg: [{
       id: 'lazyLoad',
@@ -87,5 +90,6 @@ Page({
     wx.navigateTo({
       url: '../' + e.target.dataset.chart.id + '/index'
     });
+    
   }
 });

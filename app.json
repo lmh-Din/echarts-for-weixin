@@ -29,8 +29,16 @@
     "backgroundTextStyle": "light",
     "backgroundColor": "#eee",
     "navigationBarBackgroundColor": "#eee",
-    "navigationBarTitleText": "ECharts 图表示例",
+    "navigationBarTitleText": "ECharts 图表测试",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "navigationBarTextStyle": "black",
+  "sitemapLocation": "sitemap.json",
+  "basesUrl": "https://www.guojiangliu.com/"
 }
