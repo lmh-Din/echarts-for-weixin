@@ -29,7 +29,7 @@
     "backgroundTextStyle": "light",
     "backgroundColor": "#eee",
     "navigationBarBackgroundColor": "#eee",
-    "navigationBarTitleText": "ECharts 图表测试",
+    "navigationBarTitleText": "B67-Dashboard",
     "navigationBarTextStyle": "black"
   },
   "networkTimeout": {

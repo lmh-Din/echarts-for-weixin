@@ -10,6 +10,8 @@ Page({
     }
   },
   data: {
+    studentList:[
+    ],
     charts: [{
       id: 'bar',
       name: '柱状图'
@@ -82,6 +84,21 @@ Page({
       name: '保存 Canvas 到本地文件'
     }]
   },
+  onLoad: function(ops) {
+    var that = this;
+    wx.request({
+      url: 'https://www.guojiangliu.com/dashboard/studentList?classId=2',
+      // data: {
+      //   classId: '2'
+      // },
+      method: 'POST',
+      success: function(res){
+        that.setData({
+          studentList : res.data
+        });
+      }
+    })
+  },
 
   onReady() {
   },
@@ -90,6 +107,11 @@ Page({
     wx.navigateTo({
       url: '../' + e.target.dataset.chart.id + '/index'
     });
-    
+  },
+  toStudentDashboard: function(e){
+      console.log(e)
+      wx.navigateTo({
+        url: '../grade/index?id='+e.target.id
+      })
   }
 });
