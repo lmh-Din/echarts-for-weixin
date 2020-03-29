@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <text class="header">{{studentName}}</text> -->
+  <ec-canvas id="multi-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+
+  <ec-canvas id="multi-bar2" canvas-id="mychart-bar2" ec="{{ bar }}"></ec-canvas>
+
+  <ec-canvas id="radar" canvas-id="mychart-bar1" ec="{{ radar }}"></ec-canvas>
+</view>
+

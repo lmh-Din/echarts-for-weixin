@@ -1,0 +1,30 @@
+<!--pages/list/list.wxml-->
+<!--列表页-->
+<view class='container'>
+  <!--等待框-->
+  <loading hidden="{{!loading}}">加载中...</loading>
+  <!--顶部标题栏-->
+  <!-- <view class='page-header'>
+    <text class='page-title'>{{title}}</text>
+  </view> -->
+
+  <!--列表-->
+  <view class='page-body' wx:for="{{studentList}}" wx:for-item="item" wx:key="id">
+    <navigator url='../studentChart/index?id={{item.id}}'>
+      <view class='item'>
+        <image class='poster' src='../../img/icons/bar.png'></image>
+        <view class='meta'>
+          <text class='title'>{{item.name}}</text>
+          <view class='artists'>
+            <text>班主任：</text>
+            <text>{{item.teacher}}</text>
+          </view>
+          <text class='sub-title'>名次: 「{{item.rankNum}}」</text>
+          <view class='rating'>
+            名次变动: <text class="red">{{item.rankChange}}</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
