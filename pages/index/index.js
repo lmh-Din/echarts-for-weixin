@@ -87,7 +87,7 @@ Page({
   onLoad: function(ops) {
     var that = this;
     wx.request({
-      url: 'https://www.guojiangliu.com/dashboard/studentList?classId=2',
+      url: 'https://www.guojiangliu.com/dashboard/student/list?classId=2',
       // data: {
       //   classId: '2'
       // },
@@ -111,7 +111,7 @@ Page({
   toStudentDashboard: function(e){
       console.log(e)
       wx.navigateTo({
-        url: '../grade/index?id='+e.target.id
+        url: '../studentChat/index?id='+e.target.id
       })
   }
 });

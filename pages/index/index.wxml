@@ -1,12 +1,12 @@
 <!-- index.wxml -->
 <view>
   <view wx:for="{{studentList}}" wx:for-item="student" wx:key="id">
-    <button bindtap="toStudentDashboard" id="{{student.id}}" value="{{student.name}}">{{student.name}}</button>
+    <view bindtap="toStudentDashboard" id="{{student.id}}" value="{{student.name}}">{{student.name}}</view>
   </view>
 </view>
 
-<view>
+<!-- <view>
   <view wx:for="{{charts}}" wx:for-item="chart" wx:key="id">
     <button bindtap="open" data-chart="{{chart}}">{{chart.name}}</button>
   </view>
-</view>
+</view> -->
